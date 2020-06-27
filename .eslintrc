@@ -1,0 +1,30 @@
+{
+  "extends": ["eslint:recommended"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "globalReturn": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jquery": true
+  },
+  "rules" : {
+    "no-unreachable": 2,
+    "no-use-before-define": 2,
+    "no-useless-catch": 2,
+    "no-var": 2,
+    "one-var": 2,
+    "prefer-destructuring": 2,
+    "prefer-const": 2,
+    "prefer-spread": 2,
+    "strict": 2,
+    "no-duplicate-imports": 2,
+    "default-case": 2,
+    "max-nested-callbacks": 2
+  }
+}

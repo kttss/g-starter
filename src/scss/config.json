@@ -1,0 +1,22 @@
+{
+  "elements": {
+    "button": true,
+    "checkbox": true,
+    "iframe": true,
+    "input": true,
+    "radiobox": true,
+    "select": true
+  },
+  "fragments": {},
+  "lames": {},
+  "layouts": {
+    "footer": true,
+    "header": true,
+    "skeleton": true
+  },
+  "pages": {
+    "home": true,
+    "test": true,
+    "test2": true
+  }
+}

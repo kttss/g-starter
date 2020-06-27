@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ head_title }}</title>
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+
+<body{% if body_class is defined and body_class is not empty %} class="{{ body_class }}"{% endif %}>
+
+    {% include 'header.twig' %}
+        <main>
+            {% block main %}{% endblock %}
+        </main>
+    {% include 'footer.twig' %}
+
+    <script src="../assets/js/vendor.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
+
