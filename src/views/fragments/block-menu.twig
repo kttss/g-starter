@@ -1,13 +1,13 @@
-<div class="block block-menu" >
+<div class="block block-menu">
     {% for item in items %}
         {% if item.selected  == true %}
             <div data-menuanchor="{{item.anchor}}" class="block-menu__item active">
         {% else %}
             <div data-menuanchor="{{item.anchor}}" class="block-menu__item">
         {% endif %}
-        <a href="#{{item.anchor}}">
-            <span>{{item.text}}</span>
-        </a>
-    </div>
+                <a href="#{{item.anchor}}">
+                    <span>{{item.text}}</span>
+                </a>
+            </div>
     {% endfor %}
 </div>

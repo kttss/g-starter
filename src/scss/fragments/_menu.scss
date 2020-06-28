@@ -37,6 +37,7 @@
         background-color: #3c9ff1;
         height: 100%;
         padding-top: 90px;
+        padding-bottom: 20px;
         position: fixed;
         z-index: 2;
         top: 0;
@@ -45,13 +46,16 @@
         width: 410px;
         transition: all 0.25s;
         transform: translateX(-100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
-    ul.menu__main-pages {
+    .menu__main-pages {
         list-style: none;
         padding-left: 50px;
 
-        li {
+        &__item {
             align-items: center;
             display: flex;
             padding-bottom: 20px;
