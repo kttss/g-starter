@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 
 
@@ -24,15 +25,28 @@
     <script src="../assets/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    
     <script>
         //activate fullpage.js
         let fullpage_api = $('#fullpage').fullpage({
+            navigation: true,
             scrollBar: true,
             keyboardScrolling: true,
             loopHorizontal: false,
             anchors: ['firstPage', 'secondPage', 'thirdPage'],
             slidesNavigation: false,
-            resetSliders: true
+            resetSliders: true,
+            afterRender: function() {
+                new WOW().init();
+            },
+            onLeave: function(index, nextIndex, direction){                
+                if ($('.wow').hasClass('fadeInUp')) {
+                    $(this).removeClass('fadeInUp');
+                    $(this).removeAttr('style');
+                    new WOW().init();
+                }
+            }
         });
 
         // Second Section Navigation Slides
