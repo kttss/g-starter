@@ -9,6 +9,12 @@
         %}
 <button class="btn-apply">Apply</button>
 
+{% if withImage != null %}
+        <div class="image-right">
+                <img src="{{withImage}}">
+        </div>
+        {% endif %}
+
         <div class="lame-about-who__centent">
 
      
@@ -48,4 +54,10 @@
         {% endif %}
 
         </div>
+        <div class="footer {{footerColor}}">
+        <div class="scroll-text">
+                scroll
+        </div>
+        </div>
+
 </section>
