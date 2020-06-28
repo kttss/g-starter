@@ -8,9 +8,13 @@
         items:submenu}
         %}
 <button class="btn-apply">Apply</button>
+{% if rightLogo != null %}
+<div class="logo-right">
+<img src="{{rightLogo}}"> </div>
+ {% endif %}
 
 {% if withImage != null %}
-        <div class="image-right">
+        <div class="image-right{{rightLogoClass}}">
                 <img src="{{withImage}}">
         </div>
         {% endif %}
