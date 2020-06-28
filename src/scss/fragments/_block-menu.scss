@@ -13,16 +13,28 @@
         text-transform: uppercase;
         cursor: pointer;
 
-        a:before {
-            content: '';
-            width: 6px;
-            height: 6px;
-            background-color: #ffffff;
-            border-radius: 100px;
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translate(0, -50%);
+        &:not(.active) {
+            a span {
+                opacity: .3;
+            }
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            transition: all .25s;
+
+            &::before {
+                content: '';
+                width: 6px;
+                height: 6px;
+                background-color: #ffffff;
+                border-radius: 100px;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
         }
 
         &.active:after {

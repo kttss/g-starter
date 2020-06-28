@@ -5,160 +5,182 @@
 {% block main %}
 {% include './../fragments/menu.twig' %}
 
-{% include '../lames/lame-home.twig' with {
-  background:'../assets/img/g-backgound1.jpg',
-  titre:'Join the ultimatr innovation platform.',
-   description:'We connect the est technology startups and the world s largest corporations.',
-  menu:[ {
-                selected:true,
-                text:'home'
-            },
-             {
-                selected:false,
-                text:'About'
-            },
-             {
-                selected:false,
-                text:'Facilities'
-            },
-             {
-                selected:false,
-                text:'Ventures'
-            },
-             {
-                selected:false,
-                text:'Events'
-            }
-        ]
- 
-} %}
-{% include '../lames/lame-about-who.twig' with {
-  background:'../assets/img/g-backgound1.jpg',
-  subtitre:'Who we  are',
-  titre:'Startgate, Hub D innovation',
-  description:'Cum autem commodis intervallata temporibus convivia longa et noxia coeperint apparari vel distributio sollemnium sportularum, anxia deliberatione tractatur an exceptis his quibus vicissitudo debetur, peregrinum invitari conveniet, et si digesto plene consilio id placuerit fieri, is adhibetur qui pro domibus excubat aurigarum aut artem tesserariam profitetur aut secretiora quaedam se nosse confingit.',
-  signature: 'Portfolio',
-   menu:[ {
-                selected:false,
-                text:'home'
-            },
-             {
-                selected:true,
-                text:'About'
-            },
-             {
-                selected:false,
-                text:'Facilities'
-            },
-             {
-                selected:false,
-                text:'Ventures'
-            },
-             {
-                selected:false,
-                text:'Events'
-            }
-        ],
-        submenu:[
-           {
-                selected:true,
-                text:'Who we are'
-            },
-             {
-                selected:false,
-                text:'Mission'
-            },
-             {
-                selected:false,
-                text:'Vision'
-            }
-        ]
+<div id="fullpage">
+	<div class="section">
+        {% include '../lames/lame-home.twig' with {
+            background:'../assets/img/g-backgound1.jpg',
+            titre:'Join the ultimatr innovation platform.',
+            description:'We connect the est technology startups and the world s largest corporations.',
+            menu:[ 
+                {
+                    selected:true,
+                    text:'home',
+                    anchor: 'firstPage'
+                },
+                {
+                    selected:false,
+                    text:'About',
+                    anchor: 'secondPage'
+                },
+                {
+                    selected:false,
+                    text:'Facilities',
+                    anchor: 'thirdPage'
+                }
+            ]
+        } %}
+    </div>
+	<div class="section">
+        <div class="slide">
+            {% include '../lames/lame-about-who.twig' with {
+                background:'../assets/img/g-backgound1.jpg',
+                subtitre:'Who we  are',
+                titre:'Startgate, Hub D innovation',
+                description:'Cum autem commodis intervallata temporibus convivia longa et noxia coeperint apparari vel distributio sollemnium sportularum, anxia deliberatione tractatur an exceptis his quibus vicissitudo debetur, peregrinum invitari conveniet, et si digesto plene consilio id placuerit fieri, is adhibetur qui pro domibus excubat aurigarum aut artem tesserariam profitetur aut secretiora quaedam se nosse confingit.',
+                signature: 'Portfolio',
+                menu:[ 
+                    {
+                        selected:false,
+                        text:'home',
+                        anchor: 'firstPage'
+                    },
+                    {
+                        selected:true,
+                        text:'About',
+                        anchor: 'secondPage'
+                    },
+                    {
+                        selected:false,
+                        text:'Facilities',
+                        anchor: 'thirdPage'
+                    }
+                ],
+                submenu:[
+                    {
+                        selected:true,
+                        text:'Who we are'
+                    },
+                    {
+                        selected:false,
+                        text:'Mission'
+                    },
+                    {
+                        selected:false,
+                        text:'Vision'
+                    }
+                ]
 
-}  %}
-{% include '../lames/lame-about-who.twig' with {
-  background:'../assets/img/g-backgound1.jpg',
-   isRight:true,
-  subtitre:'Mission',
-  titre:'Startgate, Hub D innovation',
-  description:'Cum autem commodis intervallata temporibus convivia longa et noxia coeperint apparari vel distributio sollemnium sportularum, anxia deliberatione tractatur an exceptis his quibus vicissitudo debetur, peregrinum invitari conveniet, et si digesto plene consilio id placuerit fieri, is adhibetur qui pro domibus excubat aurigarum aut artem tesserariam profitetur aut secretiora quaedam se nosse confingit.',
-   menu:[ {
-                selected:false,
-                text:'home'
-            },
-             {
-                selected:true,
-                text:'About'
-            },
-             {
-                selected:false,
-                text:'Facilities'
-            },
-             {
-                selected:false,
-                text:'Ventures'
-            },
-             {
-                selected:false,
-                text:'Events'
-            }
-        ],
-        submenu:[
-           {
-                selected:false,
-                text:'Who we are'
-            },
-             {
-                selected:true,
-                text:'Mission'
-            },
-             {
-                selected:false,
-                text:'Vision'
-            }
-        ]
+            }  %}
+        </div>
+        <div class="slide">
+            {% include '../lames/lame-about-who.twig' with {
+                background:'../assets/img/g-backgound1.jpg',
+                isRight:true,
+                subtitre:'Mission',
+                titre:'Startgate, Hub D innovation',
+                description:'Cum autem commodis intervallata temporibus convivia longa et noxia coeperint apparari vel distributio sollemnium sportularum, anxia deliberatione tractatur an exceptis his quibus vicissitudo debetur, peregrinum invitari conveniet, et si digesto plene consilio id placuerit fieri, is adhibetur qui pro domibus excubat aurigarum aut artem tesserariam profitetur aut secretiora quaedam se nosse confingit.',
+                menu:[ 
+                    {
+                        selected:false,
+                        text:'home',
+                        anchor: 'firstPage'
+                    },
+                    {
+                        selected:true,
+                        text:'About',
+                        anchor: 'secondPage'
+                    },
+                    {
+                        selected:false,
+                        text:'Facilities',
+                        anchor: 'thirdPage'
+                    }
+                ],
+                submenu:[
+                    {
+                        selected:false,
+                        text:'Who we are'
+                    },
+                    {
+                        selected:true,
+                        text:'Mission'
+                    },
+                    {
+                        selected:false,
+                        text:'Vision'
+                    }
+                ]
 
-}  %}
-{% include '../lames/lame-about-who.twig' with {
-  background:'https://static.lexpress.fr/medias_11918/w_1792,h_1344,c_crop,x_256,y_0/w_640,h_358,c_fill,g_center/v1537803274/getty-discussion-reunion_6102471.jpg',
-  subtitre:'Vision',
-  titre:'deliberatione tractatur an exceptis',
-  description:'Cum autem commodis intervallata temporibus convivia longa et noxia coeperint apparari vel distributio sollemnium sportularum, anxia betur qui pro domibus excubat aurigarum aut artem tesserariam profitetur aut secretiora quaedam se nosse confingit.',
-  signature: 'Portfolio',
-   menu:[ {
-                selected:false,
-                text:'home'
-            },
-             {
-                selected:true,
-                text:'About'
-            },
-             {
-                selected:false,
-                text:'Facilities'
-            },
-             {
-                selected:false,
-                text:'Ventures'
-            },
-             {
-                selected:false,
-                text:'Events'
-            }
-        ],
-        submenu:[
-           {
-                selected:false,
-                text:'Who we are'
-            },
-             {
-                selected:false,
-                text:'Mission'
-            },
-             {
-                selected:true,
-                text:'Vision'
-            }
-        ]
+            }  %}
+        </div>
+        <div class="slide">
+            {% include '../lames/lame-about-who.twig' with {
+                background:'https://static.lexpress.fr/medias_11918/w_1792,h_1344,c_crop,x_256,y_0/w_640,h_358,c_fill,g_center/v1537803274/getty-discussion-reunion_6102471.jpg',
+                subtitre:'Vision',
+                titre:'deliberatione tractatur an exceptis',
+                description:'Cum autem commodis intervallata temporibus convivia longa et noxia coeperint apparari vel distributio sollemnium sportularum, anxia betur qui pro domibus excubat aurigarum aut artem tesserariam profitetur aut secretiora quaedam se nosse confingit.',
+                signature: 'Portfolio',
+                menu:[ 
+                    {
+                        selected:false,
+                        text:'home',
+                        anchor: 'firstPage'
+                    },
+                    {
+                        selected:true,
+                        text:'About',
+                        anchor: 'secondPage'
+                    },
+                    {
+                        selected:false,
+                        text:'Facilities',
+                        anchor: 'thirdPage'
+                    }
+                ],
+                submenu:[
+                    {
+                        selected:false,
+                        text:'Who we are'
+                    },
+                    {
+                        selected:false,
+                        text:'Mission'
+                    },
+                    {
+                        selected:true,
+                        text:'Vision'
+                    }
+                ]
 
-}  %}
+            }  %}
+        </div>
+    </div>
+	<div class="section">
+        {% include '../lames/lame-about-who.twig' with {
+            background:'https://static.lexpress.fr/medias_11918/w_1792,h_1344,c_crop,x_256,y_0/w_640,h_358,c_fill,g_center/v1537803274/getty-discussion-reunion_6102471.jpg',
+            subtitre:'Vision',
+            titre:'deliberatione tractatur an exceptis',
+            description:'Cum autem commodis intervallata temporibus convivia longa et noxia coeperint apparari vel distributio sollemnium sportularum, anxia betur qui pro domibus excubat aurigarum aut artem tesserariam profitetur aut secretiora quaedam se nosse confingit.',
+            signature: 'Portfolio',
+            menu:[ 
+                    {
+                        selected:false,
+                        text:'home',
+                        anchor: 'firstPage'
+                    },
+                    {
+                        selected:false,
+                        text:'About',
+                        anchor: 'secondPage'
+                    },
+                    {
+                        selected:true,
+                        text:'Facilities',
+                        anchor: 'thirdPage'
+                    }
+                ]
+        }  %}
+    </div>
+</div>
+
 {% endblock %}

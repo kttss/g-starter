@@ -8,6 +8,7 @@
     <title>{{ head_title }}</title>
 
     <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css">
 </head>
 
 
@@ -21,7 +22,27 @@
 
     <script src="../assets/js/vendor.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
+    <script>
+        //activate fullpage.js
+        let fullpage_api = $('#fullpage').fullpage({
+            scrollBar: true,
+            navigationTooltips: ['Slide 1', 'Slide 2', 'Slide 3', 'Slide 4'],
+            keyboardScrolling: true,
+            loopHorizontal: false,
+            anchors: ['firstPage', 'secondPage', 'thirdPage'],
+            menu: '#myMenu',
+            slidesNavigation: false,
+        });
 
+        // Second Section Navigation Slides
+        $('.block-right-submenu__item').click(function(){
+            const index = $(this).index();
+            $.fn.fullpage.silentMoveTo(2, index);
+        });
+
+    </script>
 </body>
 
 </html>

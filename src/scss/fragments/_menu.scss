@@ -24,10 +24,9 @@
         background: url('../../assets/img/icon-menu.svg') no-repeat;
         background-size: cover;
         height: 30px;
-        position: absolute;
+        position: fixed;
         width: 30px;
         border: none;
-        position: absolute;
         z-index: 3;
         left: 35px;
         top: 60px;
@@ -38,7 +37,7 @@
         background-color: #3c9ff1;
         height: 100%;
         padding-top: 90px;
-        position: absolute;
+        position: fixed;
         z-index: 2;
         top: 0;
         left: 0;
@@ -53,9 +52,11 @@
         padding-left: 50px;
 
         li {
-            display: flex;
             align-items: center;
+            display: flex;
             padding-bottom: 20px;
+            width: fit-content;
+            transition: all .5s;
 
             &:hover {
                 a {
