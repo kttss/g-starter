@@ -1,0 +1,28 @@
+.block-right-submenu {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-right: 50px;
+
+    &__item {
+        padding: 5px;
+        position: relative;
+        color: #ffffff;
+
+        cursor: pointer;
+        text-align: right;
+
+        &.active:after {
+            content: '';
+            width: 45px;
+            height: 2px;
+            background-color: #ffffff;
+            position: absolute;
+            right: -50px;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+    }
+
+}

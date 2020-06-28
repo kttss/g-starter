@@ -1,0 +1,48 @@
+.lame-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .btn-apply {
+        background-color: #3C9FF1;
+        color: #ffffff;
+        padding: 5px 25px;
+        position: absolute;
+        right: 80px;
+        top: 60px;
+        border-radius: 20px;
+        border: 0;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    &__centent {
+        color: #ffffff;
+        text-align: center;
+        max-width: 550px;
+
+        &__logo {
+            margin-bottom: 50px;
+        }
+
+        &__titre {
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+            margin-bottom: 30px;
+
+            h1 {
+                font-size: 45px;
+            }
+        }
+
+        &__description {
+            font-size: 18px;
+        }
+    }
+
+}

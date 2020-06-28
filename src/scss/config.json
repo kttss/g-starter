@@ -7,8 +7,14 @@
     "radiobox": true,
     "select": true
   },
-  "fragments": {},
-  "lames": {},
+  "fragments": {
+    "block-menu": true,
+    "block-right-submenu": true
+  },
+  "lames": {
+    "lame-home": true,
+    "lame-about-who": true
+  },
   "layouts": {
     "footer": true,
     "header": true,

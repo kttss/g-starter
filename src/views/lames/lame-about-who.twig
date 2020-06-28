@@ -1,0 +1,30 @@
+<section class="lame lame-about-who {{ isRight == true ? 'right' : '' }}" style="background-image:url( {{background}})">
+{% include '../fragments/block-menu.twig' with {
+        items:menu
+        } %}
+
+        {% include '../fragments/block-right-submenu.twig' with {
+        items:submenu}
+        %}
+<button class="btn-apply">Apply</button>
+
+        <div class="lame-about-who__centent">
+
+     
+            <div class="lame-about-who__subtitre">
+            {{subtitre}}
+            </div>
+             <div class="lame-about-who__titre">
+            {{titre}}
+            </div>
+            <div class="lame-about-who__description">
+            {{description}}
+            </div>
+            {% if signature != null %}
+            <div class="lame-about-who__portfolio">
+                {{signature}}
+            </div>
+             {% endif %}
+
+        </div>
+</section>

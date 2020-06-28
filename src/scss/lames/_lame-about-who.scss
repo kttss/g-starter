@@ -1,0 +1,69 @@
+.lame-about-who {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 230px;
+    color: #ffffff;
+    position: relative;
+
+    &.right {
+        justify-content: flex-end;
+        padding-right: 180px;
+        text-align: right;
+    }
+
+    .btn-apply {
+        background-color: #3C9FF1;
+        color: #ffffff;
+        padding: 5px 25px;
+        position: absolute;
+        right: 50px;
+        bottom: 60px;
+        border-radius: 20px;
+        border: 0;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    &__subtitre {
+        color: #3C9FF1;
+        font-size: 14px;
+        margin-bottom: 20px;
+
+    }
+
+    &__titre {
+        font-size: 45px;
+        max-width: 350px;
+        letter-spacing: -3px;
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 49px;
+        margin-bottom: 20px;
+    }
+
+    &__description {
+
+        max-width: 350px;
+        margin-bottom: 30px;
+    }
+
+    &__portfolio {
+        margin-left: 100px;
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 80px;
+            height: 1px;
+            background-color: #ffffff;
+            position: absolute;
+            top: 13px;
+            left: -100px;
+        }
+    }
+
+}

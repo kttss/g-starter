@@ -1,0 +1,17 @@
+<section class="lame lame-home"  style="background-image:url( {{background}})">
+{% include '../fragments/block-menu.twig' with {
+        items:menu
+        } %}
+<button class="btn-apply">Apply</button>
+    <div class="lame-home__centent">
+        <div class="lame-home__centent__logo">
+        Startgate
+        </div>
+        <div class="lame-home__centent__titre">
+        <h1>{{titre}}</h1>
+        </div>
+        <div class="lame-home__centent__description">
+            {{description}}
+        </div>
+    </div>
+</section>

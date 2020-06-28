@@ -1,0 +1,11 @@
+<div class="block block-right-submenu">
+ {% for item in items %}
+ {% if item.selected  == true %}
+    <div class="block-right-submenu__item active">
+    {% else %}
+    <div class="block-right-submenu__item">
+    {% endif %}
+        <a>{{item.text}}</a>
+    </div>
+{% endfor %}
+</div>
