@@ -52,4 +52,26 @@
 
     }
 
+    &.menu-black {
+
+        a {
+            color: black;
+
+            &::before {
+                background-color: black;
+            }
+        }
+
+        .block-menu__item:not(.active) {
+            a::before {
+                opacity: .3;
+            }
+        }
+
+        .active:after {
+            border-color: black;
+        }
+
+    }
+
 }

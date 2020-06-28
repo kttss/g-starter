@@ -1,4 +1,4 @@
-<div class="block block-menu" >
+<div class="block block-menu {{menuBlack == true ? 'menu-black' : ''}}" >
     {% for item in items %}
         {% if item.selected  == true %}
             <div data-menuanchor="{{item.anchor}}" class="block-menu__item active">

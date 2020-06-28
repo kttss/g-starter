@@ -1,6 +1,7 @@
 <section class="lame lame-about-who {{ isRight == true ? 'right' : '' }}" style="background-image:url( {{background}})">
 {% include '../fragments/block-menu.twig' with {
-        items:menu
+        items:menu,
+        menuBlack:menuBlack
         } %}
 
         {% include '../fragments/block-right-submenu.twig' with {
@@ -11,13 +12,13 @@
         <div class="lame-about-who__centent">
 
      
-            <div class="lame-about-who__subtitre">
+            <div class="lame-about-who__subtitre {{subtitreClass}}">
             {{subtitre}}
             </div>
-             <div class="lame-about-who__titre">
+             <div class="lame-about-who__titre {{titreClass}}">
             {{titre}}
             </div>
-            <div class="lame-about-who__description">
+            <div class="lame-about-who__description {{descriptionClass}}">
             {{description}}
             </div>
             {% if signature != null %}
