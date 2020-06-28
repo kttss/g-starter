@@ -45,4 +45,44 @@
         }
     }
 
+    .footer {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        opacity: .3;
+
+        .scroll-text {
+            margin: 0 auto;
+            width: 40px;
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 1px;
+                height: 70px;
+                background: #fcfbfb;
+                position: absolute;
+                top: -70px;
+                left: 18px;
+            }
+        }
+
+        &.black {
+            color: black;
+
+            .scroll-text::before {
+                background-color: black;
+            }
+        }
+
+        &.white {
+            color: #ffffff;
+
+            .scroll-text::before {
+                background-color: #ffffff;
+            }
+        }
+    }
+
 }
