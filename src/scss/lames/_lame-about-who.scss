@@ -13,7 +13,13 @@
         justify-content: flex-end;
         padding-right: 180px;
         text-align: right;
+
+        .lame-about-who__subtitre {
+            flex-wrap: wrap-reverse;
+        }
     }
+
+
 
     .blue {
         color: #3C9FF1;
@@ -34,8 +40,18 @@
 
     &__subtitre {
         color: #3C9FF1;
-        font-size: 14px;
-        margin-bottom: 20px;
+        font-size: 12px;
+
+        margin-bottom: 7px;
+
+        display: flex;
+        flex-direction: column;
+
+        .image-logo {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 5px;
+        }
 
     }
 
@@ -50,7 +66,6 @@
     }
 
     &__description {
-
         max-width: 350px;
         margin-bottom: 30px;
     }
@@ -67,6 +82,23 @@
             position: absolute;
             top: 13px;
             left: -100px;
+        }
+    }
+
+    &__projects {
+        .lame-about-who__item {
+            text-align: center;
+
+            &__counter {
+                font-size: 30px;
+                color: #3C9FF1;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            &__titre {
+                color: #3C9FF1;
+            }
         }
     }
 

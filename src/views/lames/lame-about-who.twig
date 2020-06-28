@@ -13,7 +13,8 @@
 
      
             <div class="lame-about-who__subtitre {{subtitreClass}}">
-            {{subtitre}}
+                <img src="{{subTitreImage}}" class="image-logo">
+                {{subtitre}}
             </div>
              <div class="lame-about-who__titre {{titreClass}}">
             {{titre}}
@@ -26,6 +27,25 @@
                 {{signature}}
             </div>
              {% endif %}
+               {% if projects != null %}
+               <div>
+                <div class="lame-about-who__projects row">
+                    {% for item in projects %}
+                        <div  class="lame-about-who__item col-md-4">
+                            <div  class="lame-about-who__item__counter">
+                                {{item.count}}
+                            </div>
+                            <div  class="lame-about-who__item__titre">
+                                {{item.titre}}
+                            </div>
+                            <div  class="lame-about-who__item__description">
+                                {{item.description}}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                <div>
+        {% endif %}
 
         </div>
 </section>

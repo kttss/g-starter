@@ -54,6 +54,7 @@
             {% include '../lames/lame-about-who.twig' with {
                 background:'../assets/img/g-backgound1.jpg',
                 subtitre:'Who we  are',
+                subTitreImage: '../assets/img/atom.png',
                 titre:'Startgate, Hub D innovation',
                 description:'Cum autem commodis intervallata temporibus convivia longa et noxia coeperint apparari vel distributio sollemnium sportularum, anxia deliberatione tractatur an exceptis his quibus vicissitudo debetur, peregrinum invitari conveniet, et si digesto plene consilio id placuerit fieri, is adhibetur qui pro domibus excubat aurigarum aut artem tesserariam profitetur aut secretiora quaedam se nosse confingit.',
                 signature: 'Portfolio',
@@ -95,6 +96,7 @@
             {% include '../lames/lame-about-who.twig' with {
                 background:'../assets/img/g-backgound1.jpg',
                 isRight:true,
+                 subTitreImage: '../assets/img/atom.png',
                 subtitre:'Mission',
                 titre:'Startgate, Hub D innovation',
                 description:'Cum autem commodis intervallata temporibus convivia longa et noxia coeperint apparari vel distributio sollemnium sportularum, anxia deliberatione tractatur an exceptis his quibus vicissitudo debetur, peregrinum invitari conveniet, et si digesto plene consilio id placuerit fieri, is adhibetur qui pro domibus excubat aurigarum aut artem tesserariam profitetur aut secretiora quaedam se nosse confingit.',
@@ -128,13 +130,29 @@
                         selected:false,
                         text:'Vision'
                     }
-                ]
+                ],
+                 projects:[
+                            {
+                                count:'+30°',
+                                titre:'programmes',
+                                description:'intervallata temporibus convivia longa'
+                            },
+                                {
+                                count:'1,000',
+                                titre:'start-up',
+                                description:'intervallata temporibus convivia longa'
+                            },  {
+                                count:'40,000',
+                                titre:'m2',
+                                description:'intervallata temporibus convivia longa'
+                            }]
 
             }  %}
         </div>
-        <div class="slide">
+        <div class="slide"> 
             {% include '../lames/lame-about-who.twig' with {
                 background:'https://static.lexpress.fr/medias_11918/w_1792,h_1344,c_crop,x_256,y_0/w_640,h_358,c_fill,g_center/v1537803274/getty-discussion-reunion_6102471.jpg',
+                subTitreImage: '../assets/img/atom.png',
                 subtitre:'Vision',
                 titre:'deliberatione tractatur an exceptis',
                 description:'Cum autem commodis intervallata temporibus convivia longa et noxia coeperint apparari vel distributio sollemnium sportularum, anxia betur qui pro domibus excubat aurigarum aut artem tesserariam profitetur aut secretiora quaedam se nosse confingit.',
@@ -178,11 +196,12 @@
         {% include '../lames/lame-about-who.twig' with {
             background:'https://img.freepik.com/free-vector/abstract-technology-particle-gray-background_1035-17927.jpg?size=626&ext=jpg',
             subtitre:'Facilities',
+            subTitreImage: '../assets/img/atom.png',
             subtitreClass:'blue',
             titre:'Compus',
             titreClass:'blue',
             description:'Cum autem commodis intervallata temporibus convivia longa et tio sollemnium sportularum, anxia betur qui pro domibus excubat aurigarum aut artem tesserariam profitetur aut secretiora quaedam se nosse confingit.',
-           descriptionClass:'blue',
+            descriptionClass:'blue',
             menuBlack:true,
             menu:[ 
                     {
