@@ -3,7 +3,26 @@
 {% set body_class = 'bodyClasses' %}
 
 {% block main %}
-{% include './../fragments/menu.twig' %}
+
+    {% include './../fragments/menu.twig' with {
+            menu:[ 
+                {
+                    text:'home',
+                    anchor: 'firstPage',
+                    index: '00'
+                },
+                {
+                    text:'About',
+                    anchor: 'secondPage',
+                    index: '01'
+                },
+                {
+                    text:'Facilities',
+                    anchor: 'thirdPage',
+                    index: '02'
+                }
+            ]
+        } %}
 
 <div id="fullpage">
 	<div class="section">
