@@ -10,4 +10,7 @@ import 'bootstrap';
 
 $(document).ready(function() {
   // Call imported Module / Fragment
+  $('#menu-button-open').click(function(){
+    $( "#block-menu" ).toggleClass( "show" );
+  });
 });

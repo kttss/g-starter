@@ -9,7 +9,8 @@
   },
   "fragments": {
     "block-menu": true,
-    "block-right-submenu": true
+    "block-right-submenu": true,
+    "menu": true
   },
   "lames": {
     "lame-home": true,

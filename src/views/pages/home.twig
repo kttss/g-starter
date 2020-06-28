@@ -3,6 +3,8 @@
 {% set body_class = 'bodyClasses' %}
 
 {% block main %}
+{% include './../fragments/menu.twig' %}
+
 {% include '../lames/lame-home.twig' with {
   background:'../assets/img/g-backgound1.jpg',
   titre:'Join the ultimatr innovation platform.',
